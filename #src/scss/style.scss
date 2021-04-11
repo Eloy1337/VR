@@ -13,7 +13,8 @@
 @import "icons";
 
 // Шрифт по умолчанию
-// $fontFamily: "";
+$fontFirst: "HelveticaNeueCyr";
+$fontSecond: "NeueMachina";
 
 // Переменные
 $minWidth: 320px;
@@ -60,7 +61,8 @@ html {
 }
 
 body {
-font-size: 1.6rem;
+	font-size: 1.6rem;
+	font-family: $fontFirst;
 }
 
 @import "header";
