@@ -1,0 +1,83 @@
+.header {
+  background: black;
+  height: 100px;
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__body {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__left {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__logo {
+    margin: 0 3.2rem 0 4.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__logo span {
+    color: #ffffff;
+  }
+
+  &__language {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__language button {
+    padding: 1.1rem;
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+    font-size: 2.3rem;
+  }
+
+  &__right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__phoneNumber {
+    padding: 0 3.7rem;
+  }
+
+  &__phoneNumber a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 2.5rem;
+  }
+
+  &__button {
+  }
+
+  &__button button {
+    margin: 0 2rem;
+    background-color: transparent;
+    border: solid 1px #ffffff;
+    color: #ffffff;
+    width: 32.5rem;
+    height: 6rem;
+    border-radius: 50px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+  }
+
+  &__burger {
+    padding: 0 6.7rem;
+    width: 70px;
+    height: 70px;
+  }
+}

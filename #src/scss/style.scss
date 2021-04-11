@@ -17,12 +17,14 @@
 
 // Переменные
 $minWidth: 320px;
-$maxWidth: 1920;
+$maxWidth: 1600;
 $maxWidthContainer: 1170;
 $md1: $maxWidthContainer + 12;
 $md2: 991.98;
 $md3: 767.98;
 $md4: 479.98;
+
+$primaryColor: blue;
 
 // Обнуление
 @import "null";
@@ -52,3 +54,13 @@ $md4: 479.98;
 		padding: 0 10px;
 	}
 }
+
+html {
+	font-size: 10px;
+}
+
+body {
+font-size: 1.6rem;
+}
+
+@import "header";
