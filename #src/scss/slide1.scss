@@ -1,8 +1,131 @@
 .slide1 {
 	min-height: 100vh;
-	background-image: url("../img/background.png");
-	background-color: #000032;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
+	background: url(../img/vr.png) right center no-repeat, url(../img/background.png) center / cover no-repeat;
+	// background-image: url("../img/background.png");
+	// background-color: #000032;
+	// background-repeat: no-repeat;
+	// background-position: center;
+	// background-size: cover;
+	font-family: $fontSecond;
+	color: #ffffff;
+
+	.container {
+		margin: 0 auto;
+		padding: 0 10rem;
+		max-width: none;
+	}
+
+	&__section {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		margin: auto;
+		height: 100vh;
+	}
+
+	&__top {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 5rem;
+		letter-spacing: -0.1rem;
+	}
+
+	&__text {
+		margin-bottom: 22.5rem;
+	}
+
+	&__title {
+		font-size: 7.1rem;
+		line-height: 7.1rem;
+		display: block;
+
+		&--first {
+			margin-bottom: 0.5rem;
+		}
+
+		&--second {
+			margin-left: 5.5rem;
+			white-space: nowrap;
+
+			> span {
+				font-weight: bold;
+				position: relative;
+
+				span {
+					// position: absolute;
+					z-index: 1;
+					position: relative;
+
+					&:last-of-type {
+						font-weight: normal;
+					}
+				}
+
+				&::before {
+					content: "VR/AR";
+					display: block;
+					position: absolute;
+					color: rgba(#02cbcb, 0.4);
+					top: 2px;
+					left: -3px;
+				}
+
+				&::after {
+					content: "VR/AR";
+					display: block;
+					position: absolute;
+					color: rgba(#fa332e, 0.4);
+					left: 3px;
+					top: -2px;
+				}
+			}
+		}
+	}
+
+	&__description {
+		font-size: 1.7rem;
+		line-height: 2.4rem;
+		color: rgba(#fff, 0.8);
+		font-family: $fontFirst;
+		text-transform: uppercase;
+		font-weight: normal;
+		display: block;
+		margin-top: 5rem;
+		margin-left: 5rem;
+		letter-spacing: 0.069rem;
+	}
+
+	&__img {
+		// margin-bottom: 2.8rem;
+		background: url(../img/vr.png);
+	}
+
+	&__bottom {
+		font-family: $fontFirst;
+		font-weight: bold;
+		font-size: 1.4rem;
+		align-self: flex-start;
+		margin-bottom: 5.1rem;
+
+		span {
+			padding-left: 2rem;
+			letter-spacing: 0.13rem;
+			margin-left: 3rem;
+			position: relative;
+			text-transform: uppercase;
+
+			&:last-of-type {
+				margin-left: 4rem;
+			}
+
+			&::before {
+				position: absolute;
+				content: "/";
+				color: #1e4fc6;
+				left: 0;
+				top: -1rem;
+				font-size: 2rem;
+			}
+		}
+	}
 }
