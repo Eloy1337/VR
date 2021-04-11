@@ -134,7 +134,7 @@ select {
 
 .wrapper {
   width: 100%;
-  min-height: 100vh;
+  min-height: 100%;
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -146,7 +146,7 @@ select {
 }
 
 .container {
-  max-width: 1170px;
+  max-width: 1240px;
   margin: 0 auto;
 }
 
@@ -160,7 +160,6 @@ body {
 }
 
 .header {
-  background: black;
   height: 100px;
   margin-top: 1.5rem;
   display: -webkit-box;
@@ -173,10 +172,13 @@ body {
       -ms-flex-align: center;
           align-items: center;
   font-family: "NeueMachina";
+  position: fixed;
+  width: 100%;
 }
 
 .header button {
   outline: none;
+  cursor: pointer;
 }
 
 .header__body {
@@ -244,6 +246,10 @@ body {
   line-height: 2rem;
 }
 
+.header__language button:disabled {
+  opacity: 0.3;
+}
+
 .header__right {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -305,6 +311,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
 }
 
 .header__burger .border {
@@ -356,7 +363,16 @@ body {
   margin-left: 1.1rem;
 }
 
-@media (max-width: 1182px) {
+.slide1 {
+  min-height: 100vh;
+  background-image: url("../img/background.png");
+  background-color: #000032;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media (max-width: 1252px) {
   .container {
     max-width: 970px;
   }
