@@ -1,0 +1,20 @@
+.slide2 {
+    min-height: 100vh;
+    background: url(../img/vr.png) right center no-repeat, url(../img/background.png) center / cover no-repeat;
+    font-family: $fontSecond;
+    color: #ffffff;
+
+    .container {
+        margin: 0 auto;
+		padding: 0 10rem;
+		max-width: none;
+    }
+
+    &__section {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		margin: auto;
+		height: 100vh;
+	}
+}

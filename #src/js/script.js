@@ -1,4 +1,4 @@
-// @@include("alert.js")
+@@include("fullpage.js");
 
 $(document).ready(() => {
 
@@ -32,4 +32,15 @@ $(document).ready(() => {
 			$(".formConsultation").addClass("hidden")
 		});
 	});
+  
+  // Добавление Fullpage
+    $("#fullpage").fullpage({
+    //options here
+    autoScrolling: true,
+    navigation: true,
+    navigationPosition: "left",
+    scrollBar: false,
+    scrollingSpeed: 500,
+  });
+  
 });
