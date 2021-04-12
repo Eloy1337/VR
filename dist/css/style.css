@@ -775,7 +775,10 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+<<<<<<< HEAD
   margin-bottom: 2rem;
+=======
+>>>>>>> 055276bf7b74a575c11c911b1473aa3c68099d53
 }
 
 .formConsultation__form .form__container {
