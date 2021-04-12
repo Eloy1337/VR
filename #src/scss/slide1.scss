@@ -66,8 +66,8 @@
 					display: block;
 					position: absolute;
 					color: rgba(#02cbcb, 0.4);
-					top: 2px;
-					left: -3px;
+					bottom: 5px;
+					left: -2px;
 				}
 
 				&::after {
@@ -76,7 +76,7 @@
 					position: absolute;
 					color: rgba(#fa332e, 0.4);
 					left: 3px;
-					top: -2px;
+					top: 5px;
 				}
 			}
 		}

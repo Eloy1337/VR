@@ -1,0 +1,372 @@
+.burgerPopup {
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-image: url(../img/burder_bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	opacity: 0;
+
+	a {
+		color: rgba(#fff, 0.4);
+		text-decoration: none;
+		transition: all 0.2s ease-in-out;
+
+		&:hover {
+			color: #fff;
+		}
+	}
+
+	&__section {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-self: center;
+		height: 100%;
+	}
+
+	&__header {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 3.6rem;
+		width: 100%;
+	}
+
+	&__logo {
+		margin: 0 3.2rem 0 4.3rem;
+	}
+
+	&__burger {
+		width: 6.6rem;
+		height: 6.6rem;
+		border-radius: 50%;
+		margin: 0 4.4rem;
+		cursor: pointer;
+		// background-color: black;
+		border: 3px solid #1e4fc6;
+		position: relative;
+		box-sizing: border-box;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		cursor: pointer;
+
+		span {
+			display: block;
+			background-color: #fff;
+			height: 0.2rem;
+			// margin: 0.4rem 0;
+
+			&:first-of-type {
+				width: 3.6rem;
+				position: absolute;
+				transform: rotate(45deg);
+			}
+
+			&:last-of-type {
+				width: 3.6rem;
+				position: absolute;
+				transform: rotate(-45deg);
+			}
+		}
+
+		&::after {
+			content: "ЗАКРЫТЬ";
+			position: absolute;
+			color: white;
+			font-size: 1.4rem;
+			bottom: -7rem;
+			transform: rotate(90deg);
+		}
+	}
+
+	&__main {
+		display: flex;
+		justify-content: center;
+		font-family: $fontSecond;
+		font-size: 4.2rem;
+		line-height: 5.4rem;
+		color: rgba(#fff, 0.4);
+	}
+
+	&__list {
+		display: block;
+		margin: 0 10rem !important;
+	}
+
+	&__list--first {
+	}
+
+	&__item {
+		margin-bottom: 3.2rem;
+		position: relative;
+
+		span {
+			font-size: 2rem;
+			line-height: 2.6rem;
+			position: absolute;
+			top: 0;
+			left: -4rem;
+		}
+	}
+
+	&__list--second {
+		padding-left: 4rem;
+	}
+
+	&__footer {
+		align-self: flex-start;
+		margin-left: 15.6rem;
+		margin-bottom: 3.8rem;
+		font-family: $fontFirst;
+		font-size: 1.7rem;
+		line-height: 2.4rem;
+		color: white;
+	}
+}
+
+.formConsultation {
+	width: 100%;
+	height: 100%;
+	z-index: 5;
+	position: fixed;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	background-image: url(../img/form_bg.png);
+	background-color: #e4e7e9;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
+	.header {
+		position: static;
+		top: 0;
+		left: 0;
+
+		&__body {
+		}
+
+		&__left {
+		}
+
+		&__logo {
+		}
+
+		&__language {
+			button {
+				color: #000032;
+			}
+		}
+
+		&__right {
+		}
+
+		&__phoneNumber {
+			a {
+				color: #000032;
+			}
+		}
+
+		&__button {
+			button {
+				color: #000032;
+				opacity: 0.3;
+				border: 1px solid #000032;
+			}
+		}
+
+		&__burger {
+			span {
+				background-color: #000032;
+			}
+		}
+	}
+
+	&__section {
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	&__header {
+	}
+
+	&__main {
+		// display: none;
+		display: flex;
+		align-items: flex-start;
+		color: #000032;
+		margin-bottom: 16.5rem;
+	}
+
+	&__left {
+		margin: 0 10rem;
+		button {
+			padding: 3rem 2rem;
+			border: 1px solid rgba(#000032, 0.4);
+			border-radius: 67px;
+			outline: none;
+			background-color: transparent;
+			cursor: pointer;
+		}
+	}
+
+	&__right {
+		width: 56%;
+	}
+
+	&__title {
+		font-size: 5.2rem;
+		line-height: 5.7rem;
+		font-family: $fontSecond;
+		margin-bottom: 2rem;
+	}
+
+	&__description {
+		font-size: 1.7rem;
+		line-height: 2.4rem;
+		font-family: $fontFirst;
+		width: 43%;
+		margin-bottom: 3rem;
+	}
+
+	&__form {
+		font-size: 1.4rem;
+		line-height: 1.82rem;
+		font-family: $fontFirst;
+
+		input {
+			outline: none;
+		}
+
+		.form__inputs {
+			display: flex;
+			flex-wrap: wrap;
+			margin-bottom: 2rem;
+		}
+
+		.form__container {
+			position: relative;
+			margin-right: 5.4rem;
+			flex: 1 0 25%;
+		}
+
+		.form__input {
+			padding: 1.5rem 1rem;
+			margin-top: 2rem;
+			// margin-right: 5.4rem;
+			// flex: 1 0 25%;
+			width: 100%;
+			border: none;
+			background-color: transparent;
+			border-bottom: 1px solid rgba(0, 0, 50, 0.4);
+			// box-sizing: border-box;
+			position: relative;
+			display: block;
+
+			&:required + span {
+				position: absolute;
+				top: 1rem;
+				left: 0;
+				font-size: 1.4rem;
+				line-height: 1.8rem;
+				&::before {
+					content: "*";
+					position: absolute;
+					top: 2.3rem;
+					left: 0;
+					display: block;
+					color: #fc3230;
+				}
+			}
+
+			&::placeholder {
+				color: #000032;
+			}
+			// &:required {
+			// 	position: relative;
+			// &::before {
+			// 	content: "*";
+			// 	// z-index: 500;
+			// 	color: #fc3230;
+			// 	position: absolute;
+			// 	display: block;
+			// 	top: 0;
+			// 	left: 0;
+			// 	width: 2rem;
+			// 	height: 2rem;
+			// 	background-color: black;
+			// }
+			// }
+		}
+
+		// .form__description {
+		// 	width: 100% !important;
+		// }
+
+		input[type="submit"] {
+			color: white;
+			font-size: 1.4rem;
+			line-height: 1.4rem;
+			letter-spacing: 0.14rem;
+			margin-top: 3.2rem;
+			text-transform: uppercase;
+			background: linear-gradient(112.73deg, #1e4fc6 1.67%, #5e1ec6 100%);
+			border: none;
+			outline: none;
+			border-radius: 67px;
+			padding: 2.2rem 3.7rem;
+		}
+
+		input[type="checkbox"] {
+			position: absolute;
+			z-index: -1;
+			opacity: 0;
+
+			& + label {
+				position: relative;
+				padding-left: 2.5rem;
+			}
+
+			& + label::before {
+				content: "";
+				position: absolute;
+				display: block;
+				top: -2px;
+				left: 0;
+				width: 2rem;
+				height: 2rem;
+				background-color: #1e4fc6;
+				border-radius: 2px;
+			}
+
+			&:checked + label::before {
+				background-image: url(../img/checked.svg);
+				background-position: center;
+				// background-size: contain;
+				background-repeat: no-repeat;
+			}
+		}
+	}
+
+	&__footer {
+		align-self: flex-start;
+		margin-left: 15.6rem;
+		margin-bottom: 3.8rem;
+		font-family: $fontFirst;
+		font-size: 1.7rem;
+		line-height: 2.4rem;
+		color: #000032;
+	}
+}
+
+.hidden {
+	display: none;
+}
