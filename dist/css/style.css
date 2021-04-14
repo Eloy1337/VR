@@ -330,7 +330,6 @@ html.fp-enabled,
 .fp-slidesNav ul li {
   display: block;
   width: 14px;
-  height: 13px;
   margin: 7px;
   position: relative;
 }
@@ -354,9 +353,13 @@ html.fp-enabled,
 .fp-slidesNav ul li a.active span,
 #fp-nav ul li:hover a.active span,
 .fp-slidesNav ul li:hover a.active span {
+  background-color: #ffffff;
   height: 30px;
   width: 4px;
-  border-radius: 15px;
+  border-radius: 2px;
+  -webkit-transition: height 0.5s linear;
+  -o-transition: height 0.5s linear;
+  transition: height 0.5s linear;
 }
 
 #fp-nav ul li a span,
@@ -369,11 +372,7 @@ html.fp-enabled,
   border: 0;
   background: #ffffff;
   left: 50%;
-  top: 50%;
   margin: -2px 0 0 -2px;
-  -webkit-transition: all 0.1s ease-in-out;
-  -o-transition: all 0.1s ease-in-out;
-  transition: all 0.1s ease-in-out;
 }
 
 #fp-nav ul li:hover a span,
@@ -912,6 +911,7 @@ a.active {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-color: #492f74;
   opacity: 0;
 }
 

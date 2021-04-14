@@ -134,11 +134,11 @@ html.fp-enabled,
 }
 #fp-nav ul li,
 .fp-slidesNav ul li {
-    display: block;
-    width: 14px;
-    height: 13px;
-    margin: 7px;
-    position: relative;
+  display: block;
+  width: 14px;
+  // height: 30px;
+  margin: 7px;
+  position: relative;
 }
 .fp-slidesNav ul li {
     display: inline-block;
@@ -156,27 +156,33 @@ html.fp-enabled,
 #fp-nav ul li a.active span,
 .fp-slidesNav ul li a.active span,
 #fp-nav ul li:hover a.active span,
-.fp-slidesNav ul li:hover a.active span{
-    height: 30px;
-    width: 4px;
-    border-radius: 15px;
- }
+
+
+.fp-slidesNav ul li:hover a.active span {
+  background-color: #ffffff;
+  height: 30px;
+  width: 4px;
+  border-radius: 2px;
+  // margin: 20px 0;
+  transition: height 0.5s linear;
+}
+
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
-    border-radius: 50%;
-    position: absolute;
-    z-index: 1;
-    height: 4px;
-    width: 4px;
-    border: 0;
-    background: #ffffff;
-    left: 50%;
-    top: 50%;
-    margin: -2px 0 0 -2px;
-    -webkit-transition: all 0.1s ease-in-out;
-    -moz-transition: all 0.1s ease-in-out;
-    -o-transition: all 0.1s ease-in-out;
-    transition: all 0.1s ease-in-out;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+  height: 4px;
+  width: 4px;
+  border: 0;
+  background: #ffffff;
+  left: 50%;
+  margin: -2px 0 0 -2px;
+  // -webkit-transition: all 0.1s ease-in-out;
+  // -moz-transition: all 0.1s ease-in-out;
+  // -o-transition: all 0.1s ease-in-out;
+  // transition: all 0.5s linear;
+
 }
 #fp-nav ul li:hover a span,
 .fp-slidesNav ul li:hover a span{
@@ -238,3 +244,5 @@ html.fp-enabled,
 a.active {
     height: 30px !important;
 }
+
+
