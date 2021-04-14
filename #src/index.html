@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    @@include("_head.html", { "title": "Главная", })
-  </head>
 
-  <body>
-    <div class="wrapper">
-      @@include("_header.html", {})
-      <main class="main">
-        <div id="fullpage">
-          <div class="section">@@include("_slide1.html", {})</div>
-          <div class="section">@@include("_slide2.html", {})</div>
-        </div>
-      </main>
-    </div>
-    @@include("_popup.html", {})
-    @@include("_js.html", {})
+<head>
+  @@include("_head.html", { "title": "Главная", })
+</head>
 
-  </body>
+<body>
+  <div class="wrapper">
+    @@include("_header.html", {})
+    <main class="main">
+      <div id="fullpage">
+        <div class="section">@@include("_slide1.html", {})</div>
+        <div class="section">@@include("_slide2.html", {})</div>
+      </div>
+    </main>
+  </div>
+  @@include("_popup.html", {})
+  @@include("_js.html", {})
+</body>
+
 </html>
