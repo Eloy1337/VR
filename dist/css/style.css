@@ -322,13 +322,6 @@ html.fp-enabled,
 
 #fp-nav ul,
 .fp-slidesNav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   margin: 0;
   padding: 0;
 }
@@ -386,6 +379,7 @@ html.fp-enabled,
 .fp-slidesNav ul li:hover a span {
   width: 10px;
   height: 10px;
+  margin: -5px 0px 0px -5px;
 }
 
 #fp-nav ul li .fp-tooltip {
@@ -793,7 +787,7 @@ a.active {
 
 .slide2 {
   min-height: 100vh;
-  background: url(../img/vr.png) right center no-repeat, url(../img/background.png) center/cover no-repeat;
+  background: url(../img/slide2background.png) center/cover no-repeat;
   font-family: "NeueMachina";
   color: #ffffff;
 }
@@ -817,6 +811,93 @@ a.active {
           justify-content: flex-end;
   margin: auto;
   height: 100vh;
+}
+
+.slide2__text {
+  position: absolute;
+  margin-left: 5rem;
+  margin-bottom: 61.5rem;
+}
+
+.slide2__title {
+  width: 40rem;
+  font-size: 5.4rem;
+  text-transform: uppercase;
+  line-height: 5.8rem;
+  letter-spacing: -0.07rem;
+}
+
+.slide2__images {
+  margin-bottom: 28.5rem;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.slide2__images--vr {
+  background: url(../img/left.png) center/cover no-repeat;
+  margin-left: 12rem;
+  width: 40rem;
+  height: 30rem;
+}
+
+.slide2__images--phone {
+  position: relative;
+  background: url(../img/right.png) center/cover no-repeat;
+  margin-right: 31rem;
+  width: 32rem;
+  height: 30rem;
+  bottom: 2rem;
+}
+
+.slide2__description {
+  left: 23rem;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  bottom: 10rem;
+}
+
+.slide2__description--vr {
+  position: relative;
+  text-align: left;
+}
+
+.slide2__description--vr > h1 {
+  font-size: 2.5rem;
+}
+
+.slide2__description--vr > p {
+  padding-top: 1rem;
+  line-height: 2.4rem;
+  font-size: 1.7rem;
+  font-family: "HelveticaNeueCyr";
+  width: 54rem;
+}
+
+.slide2__description--phone {
+  margin-left: 11rem;
+  position: relative;
+  text-align: left;
+}
+
+.slide2__description--phone > h1 {
+  font-size: 2.5rem;
+}
+
+.slide2__description--phone > p {
+  padding-top: 1rem;
+  line-height: 2.4rem;
+  font-size: 1.7rem;
+  font-family: "HelveticaNeueCyr";
+  width: 54rem;
 }
 
 .burgerPopup {

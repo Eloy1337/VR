@@ -1,20 +1,103 @@
 .slide2 {
-    min-height: 100vh;
-    background: url(../img/vr.png) right center no-repeat, url(../img/background.png) center / cover no-repeat;
-    font-family: $fontSecond;
-    color: #ffffff;
+  min-height: 100vh;
+  background: url(../img/slide2background.png) center / cover no-repeat;
+  font-family: $fontSecond;
+  color: #ffffff;
 
-    .container {
-        margin: 0 auto;
-		padding: 0 10rem;
-		max-width: none;
+  .container {
+    margin: 0 auto;
+    padding: 0 10rem;
+    max-width: none;
+  }
+
+  &__section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: auto;
+    height: 100vh;
+  }
+
+  &__text {
+    position: absolute;
+    margin-left: 5rem;
+    margin-bottom: 61.5rem;
+  }
+
+  &__title {
+    width: 40rem;
+    font-size: 5.4rem;
+    text-transform: uppercase;
+    line-height: 5.8rem;
+    letter-spacing: -0.07rem;
+  }
+
+  &__images {
+    margin-bottom: 28.5rem;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+    &--vr {
+      background: url(../img/left.png) center / cover no-repeat;
+      margin-left: 12rem;
+      width: 40rem;
+      height: 30rem;
     }
 
-    &__section {
-		display: flex;
-		flex-direction: column;
-		justify-content: flex-end;
-		margin: auto;
-		height: 100vh;
-	}
+    &--phone {
+      position: relative;
+      background: url(../img/right.png) center / cover no-repeat;
+      margin-right: 31rem;
+      width: 32rem;
+      height: 30rem;
+      bottom: 2rem;
+    }
+
+  }
+
+  &__description{
+    left: 23rem;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    bottom: 10rem;
+
+    &--vr {
+      position: relative;
+      text-align: left;
+
+      > h1 {
+        font-size: 2.5rem;
+
+      }
+
+      > p {
+        padding-top: 1rem;
+        line-height: 2.4rem;
+        font-size: 1.7rem;
+        font-family: $fontFirst;
+        width: 54rem;
+      }
+    }
+
+    &--phone {
+      margin-left: 11rem;
+      position: relative;
+      text-align: left;
+
+      > h1 {
+        font-size: 2.5rem;
+
+      }
+
+      > p {
+        padding-top: 1rem;
+        line-height: 2.4rem;
+        font-size: 1.7rem;
+        font-family: $fontFirst;
+        width: 54rem;
+      }
+    }
+  }
 }
